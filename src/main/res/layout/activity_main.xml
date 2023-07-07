@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FF03DAC5"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="400dp"
+    android:layout_height="30dp"
+    tools:ignore="MissingConstraints">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:text="天气预报"
+        android:textColor="#0A4E6C"
+        android:textSize="25dp"></TextView>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="743dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:text="实况"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#85B8CF"
+                android:text="查询"
+                android:textColor="#2f4f4f"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:gravity="center"
+            android:text="天气状况"
+            android:textColor="#000000"
+            android:textSize="25dp"></TextView>
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginLeft="30dp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="温度"
+            android:textColor="#000000"
+            android:textSize="30dp"></TextView>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
